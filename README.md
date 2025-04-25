@@ -1,102 +1,86 @@
-loadstring(game:HttpGet("https://pastefy.app/QdnGIUlI/raw",true))()
+-- Load initial scripts
+loadstring(game:HttpGet("https://pastefy.app/QdnGIUlI/raw", true))()
+loadstring(game:HttpGet("https://pastefy.app/UMiXRIAf/raw", true))()
 
-loadstring(game:HttpGet("https://pastefy.app/UMiXRIAf/raw",true))()
-
-local Library =loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-
+-- Load UI Library
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("xtentacion_fan on tiktok", "DarkTheme")
 
-local Tab = Window:NewTab("Universal scripts")
+-- Make UI Draggable
+spawn(function()
+    repeat wait() until game.CoreGui:FindFirstChild("KavoUI") ~= nil
+    local gui = game.CoreGui:FindFirstChild("KavoUI")
+    local dragFrame = gui:FindFirstChildWhichIsA("Frame", true)
 
-local Section = Tab:NewSection("universal")
-
-Section:NewButton("Fly", "ButtonInfo", function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
-
-   print("Clicked")
+    if dragFrame then
+        dragFrame.Active = true
+        dragFrame.Draggable = true
+    end
 end)
 
-Section:NewButton("invisible", "ButtonInfo", function()
+-- Universal Scripts Tab
+local UniversalTab = Window:NewTab("Universal scripts")
+local UniversalSection = UniversalTab:NewSection("universal")
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
-
-   print("Clicked")
+UniversalSection:NewButton("Fly", "Enables flying", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+    print("Fly activated")
 end)
 
-Section:NewButton("wall walk", "ButtonInfo", function()
-
-loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-
-   print("clicked") 
-
+UniversalSection:NewButton("Invisible", "Become invisible", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui"))()
+    print("Invisible mode activated")
 end)
 
-Section:NewButton("reverse script", "ButtonInfo", function()
-
-loadstring(game:HttpGet("https://mscripts.vercel.app/scfiles/reverse-script.lua"))()
-
-   print("Clicked")
+UniversalSection:NewButton("Wall Walk", "Walk through walls", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    print("Wall walk activated")
 end)
 
-local Tab = Window:NewTab("mm2")
-
-local Section = Tab:NewSection("mm2")
-Section:NewButton("OverDrive", "ButtonInfo", function() 
-loadstring(game:HttpGet("https://raw.github
-sercontent.com/Universal-Script/ODH/refs/heads/main/Overdrive-H"))()
-
-   print("Clicked")
+UniversalSection:NewButton("Reverse Script", "Reverses something in-game", function()
+    loadstring(game:HttpGet("https://mscripts.vercel.app/scfiles/reverse-script.lua"))()
+    print("Reverse script activated")
 end)
 
-Section:NewButton("X hub", "ButtonInfo", function()
+-- MM2 Tab
+local MM2Tab = Window:NewTab("MM2")
+local MM2Section = MM2Tab:NewSection("MM2")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hoodratleahh/Scripts/refs/heads/main/nikotestolhubeaster.lua"))()
-
-   print("clicked") 
-end) 
-
-
-Section:NewButton("kill all(only use this if ur murd) ", "ButtonInfo", function() 
-
-
-loadstring(game:HttpGet("https://pastefy.app/uIN86D8E/raw",true))()
-
-   print("Clicked")
-
+MM2Section:NewButton("OverDrive", "Advanced MM2 script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Universal-Script/ODH/refs/heads/main/Overdrive-H"))()
+    print("OverDrive loaded")
 end)
 
-Section:NewButton("forge hub", "ButtonInfo", function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
-
-   print("Clicked")
+MM2Section:NewButton("X Hub", "Another MM2 script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hoodratleahh/Scripts/refs/heads/main/nikotestolhubeaster.lua"))()
+    print("X Hub loaded")
 end)
 
-local Tab = Window:NewTab("bloxfruit")
-
-local Section = Tab:NewSection("bloxfruit")
-
-Section:NewButton("redz", "ButtonInfo", function()
-
-loadstring(game:HttpGet("https://pastefy.app/dmU9ZSwh/raw",true))()
-
-   print("Clicked")
-
+MM2Section:NewButton("Kill All (only as murderer)", "Eliminates everyone", function()
+    loadstring(game:HttpGet("https://pastefy.app/uIN86D8E/raw", true))()
+    print("Kill All activated")
 end)
 
-Section:NewButton("hoho hub", "ButtonInfo", function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
-
-   print("Clicked")
+MM2Section:NewButton("Forge Hub", "MM2 Forge Hub script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+    print("Forge Hub loaded")
 end)
 
-Section:NewButton("auto bounty", "ButtonInfo", function()
+-- Blox Fruits Tab
+local BloxFruitTab = Window:NewTab("Bloxfruit")
+local BloxFruitSection = BloxFruitTab:NewSection("Bloxfruit")
 
-loadstring(game:HttpGet("https://pastefy.app/eQDjzB6t/raw",true))()
-
-   print("Clicked")
+BloxFruitSection:NewButton("Redz", "Redz Bloxfruit script", function()
+    loadstring(game:HttpGet("https://pastefy.app/dmU9ZSwh/raw", true))()
+    print("Redz loaded")
 end)
 
- 
+BloxFruitSection:NewButton("Hoho Hub", "Popular Bloxfruit GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+    print("Hoho Hub loaded")
+end)
+
+BloxFruitSection:NewButton("Auto Bounty", "Automatically farm bounty", function()
+    loadstring(game:HttpGet("https://pastefy.app/eQDjzB6t/raw", true))()
+    print("Auto Bounty started")
+end)
