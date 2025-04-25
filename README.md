@@ -2,9 +2,6 @@
 loadstring(game:HttpGet("https://pastefy.app/QdnGIUlI/raw", true))()
 loadstring(game:HttpGet("https://pastefy.app/UMiXRIAf/raw", true))()
 
--- Load UI Library
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("xtentacion_fan on tiktok", "DarkTheme")
 
 -- Make UI Draggable
 spawn(function()
