@@ -47,12 +47,16 @@ local Tab = Window:NewTab("mm2")
 local Section = Tab:NewSection("mm2")
 
 Section:NewButton("OverDrive", "ButtonInfo", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Universal-Script/ODH/refs/heads/main/Overdrive-H"))()
-
    print("Clicked")
-
 end)
+Section:NewButton("X hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hoodratleahh/Scripts/refs/heads/main/nikotestolhubeaster.lua"))()
+   print("clicked") 
+end
 
-Section:NewButton("kill all(only use this if ur murd) ", "ButtonInfo", function() loadstring(game:HttpGet("https://pastefy.app/uIN86D8E/raw",true))()
+Section:NewButton("kill all(only use this if ur murd) ", "ButtonInfo", function() 
+
+loadstring(game:HttpGet("https://pastefy.app/uIN86D8E/raw",true))()
 
    print("Clicked")
 
