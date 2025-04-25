@@ -14,16 +14,14 @@ Section:NewButton("Fly", "ButtonInfo", function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 
-    print("Clicked")
-
+   print("Clicked")
 end)
 
 Section:NewButton("invisible", "ButtonInfo", function()
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
 
-    print("Clicked")
-
+   print("Clicked")
 end)
 
 Section:NewButton("wall walk", "ButtonInfo", function()
@@ -38,8 +36,7 @@ Section:NewButton("reverse script", "ButtonInfo", function()
 
 loadstring(game:HttpGet("https://mscripts.vercel.app/scfiles/reverse-script.lua"))()
 
-    print("Clicked")
-
+   print("Clicked")
 end)
 
 local Tab = Window:NewTab("mm2")
@@ -75,8 +72,7 @@ Section:NewButton("forge hub", "ButtonInfo", function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
 
-    print("Clicked")
-
+   print("Clicked")
 end)
 
 local Tab = Window:NewTab("bloxfruit")
@@ -95,16 +91,14 @@ Section:NewButton("hoho hub", "ButtonInfo", function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 
-    print("Clicked")
-
+   print("Clicked")
 end)
 
 Section:NewButton("auto bounty", "ButtonInfo", function()
 
 loadstring(game:HttpGet("https://pastefy.app/eQDjzB6t/raw",true))()
 
-    print("Clicked")
-
+   print("Clicked")
 end)
 
  
