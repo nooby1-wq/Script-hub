@@ -59,7 +59,7 @@ Section:NewButton("X hub", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hoodratleahh/Scripts/refs/heads/main/nikotestolhubeaster.lua"))()
 
    print("clicked") 
-end
+end) 
 
 
 Section:NewButton("kill all(only use this if ur murd) ", "ButtonInfo", function() 
